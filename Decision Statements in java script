@@ -1,0 +1,88 @@
+// decision statements
+
+//  if statement
+
+if(7>4){
+    console.log("yes")
+    }
+
+
+//  if else statement
+var a  = 3
+if(a%2==0)
+console.log("Even")
+else
+console.log("Odd")
+
+//  if else ladder / nested if else
+
+if(a>0)
+console.log("positive")
+else if(a<0)
+console.log("Negative")
+else
+console.log("Zero")
+
+// nested if
+
+var b = 56
+if(b>50)
+  if(b<100)
+  console.log("true")
+  else
+  console.log("false")
+//shorthand property
+//if(b<50 && b>100)
+console.log(true)
+else
+console.log(False)
+
+  //  Switch
+
+  switch(a)
+  {
+    case '+':
+        console.log(a+b)
+        break
+
+        case '-':
+            console.log(a+b)
+            break
+
+            case '*':
+                console.log(a+b)
+                break
+
+                case '/':
+                    console.log(a+b)
+                    break
+
+
+  }
+
+
+// Nestedswitch
+
+switch(condition)
+{
+    case Withdraw :
+        switch(b)
+        {
+           case currentaccount :
+            var c = prompt("Enter the amount")
+            confirm("entered amount is " +c)
+            case savingaccount :
+                var c = prompt("Enter the amount")
+                confirm("entered amount is " +c)
+                default :
+                console.log("bye")
+        }
+
+    case Depsoite :
+    case pinchange :
+        case Statement :
+            default  :
+
+
+}
+
