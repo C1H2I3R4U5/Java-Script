@@ -1,0 +1,33 @@
+
+
+
+code
+
+var a = prompt("enter the number 1 : ")
+var b = prompt("enter the number 2 : ")
+var operator = prompt("enter the operator: ")
+
+
+switch(operator)
+{
+  case '+':
+      console.log(a+b)
+      break
+
+      case '-':
+          console.log(a-b)
+          break
+
+          case '*':
+              console.log(a*b)
+              break
+
+              case '/':
+                  console.log(a/b)
+                  break
+                  defalut :
+                  console.log("It is not a nunber")
+
+
+} 
+ 
