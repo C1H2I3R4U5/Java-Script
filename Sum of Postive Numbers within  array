@@ -1,0 +1,15 @@
+//Sum of Postive Numbers within  array
+
+let a = [1,-2,-3,4,-5]
+Sum = 0
+i=0
+while(i<a.length)
+{
+    if(a[i]>0)
+    {
+        Sum +=a[i]
+
+    }
+    i++
+}
+console.log(Sum)
