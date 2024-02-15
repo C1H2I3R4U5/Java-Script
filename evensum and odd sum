@@ -1,0 +1,26 @@
+// input should be array output should be evensum and odd sum
+
+function oddOrEven()
+{
+var a = Number(prompt(""))
+var b = String(a).split('').map(Number)
+var evensum =0
+var oddsum =0
+
+
+for(x of b)
+{
+   
+    if(x%2==0)
+    {
+       evensum +=x
+    }
+    else
+   {
+    oddsum +=x
+}
+}
+
+console.log(`{oddsum: ${oddsum},evensum: ${evensum}}`)
+}
+oddOrEven()
