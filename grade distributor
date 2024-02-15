@@ -1,0 +1,44 @@
+function main() {
+    var scores = prompt("").split(" ").map(x => parseInt(x));
+    console.log(distributeGrades(scores));
+}
+function distributeGrades(scores) {
+  // Your code goes here
+ countA=0
+ countB=0
+ countC=0
+ countD=0
+countF=0
+  for(x of scores)
+  {
+      if(x>90)
+      {
+         
+          countA++
+      }else if(x>80)
+          {
+            
+              countB++ 
+          }
+          else if(x>70)
+          {
+            
+              countC++
+          }
+          else if(x>60)
+          {
+           
+              countD++
+          }
+          else
+          {
+         
+              countF++
+              
+          }
+  }
+ // console.log(`{A : ${countA} B : ${countB}  C : ${countC}  D : ${countD}   F : ${countF}}`)
+  return {A : countA, B : countB, C:countC, D:countD, F:countF}
+  
+}
+main()
