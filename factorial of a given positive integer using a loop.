@@ -1,0 +1,19 @@
+function main()
+{
+var num = Number(prompt(""))
+console.log(Gdb(num))
+}
+function Gdb(num){
+    var fact = 2
+for(let i=0;i<1;i++)
+{
+if(num > 0)
+{
+    fact*=num
+}else{
+    console.log("Enter valid positive number number")
+}
+}
+return fact
+}
+main()
