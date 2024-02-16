@@ -1,0 +1,46 @@
+//Simple Calculator
+function main()
+{
+var num1 = prompt("")
+var num2 = prompt("")
+var operator = prompt("")
+console.log(simpleCalculator(num1,num2,operator))
+}
+function simpleCalculator(num1,num2,operator)
+{
+if(isNaN(num1) || isNaN(num2))
+{
+    console.log("Invalid input please enter valid numbric values")
+}
+else {
+switch(operator)
+{
+    case '+' :
+       return num1+num2
+        break
+        case '-':
+          return num1-num2
+            break
+            case '/':
+                
+                if(num2!==0)
+                {
+                    return num1/num2
+                }
+                else{
+                    console.log("Error: divisible by zero")
+                }
+                break
+                case '*':
+                    return num1*num2
+                    break
+                    default :
+                        console.log("unsupported opertor: please enter valid operator")
+                        break
+                   
+                          a
+                 
+            }              
+}
+}
+main()
