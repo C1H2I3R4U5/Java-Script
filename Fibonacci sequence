@@ -1,0 +1,17 @@
+// Write a function to generate the first N numbers in the Fibonacci sequence and print the result. Use a loop to achieve this.
+
+// F(n)=F(n−1)+F(n−2)
+function fiboseq(){
+var num = 10
+console.log(generatefibbonacci(num))
+}
+function generatefibbonacci(num){
+    var fibonacciSeq =[0,1]
+for(i=2;i<=num;i++)
+{
+    nextfibo = fibonacciSeq[i-1] +fibonacciSeq[i-2]
+    fibonacciSeq.push(nextfibo)
+}
+return fibonacciSeq
+}
+fiboseq()
