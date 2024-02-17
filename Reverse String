@@ -1,0 +1,14 @@
+function main()
+{
+    var a = String(prompt(""))
+    console.log(reverseString(a))
+}
+function reverseString(a)
+{
+    for(i=0;i<1;i++)
+{
+   reversed = a.split("").reverse().join("")
+   return reversed
+}
+}
+main()
