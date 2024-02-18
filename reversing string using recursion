@@ -1,0 +1,17 @@
+//Using recursion 
+function main()
+{
+var a = String(prompt(""))
+console.log(reversedString(a))
+}
+function reversedString(a)
+{
+if(a ==="")
+{
+    return ""
+}
+else{
+   return  reversedString(a.substring(1)) + a.charAt(0)   // ello + h
+}
+}
+main()
