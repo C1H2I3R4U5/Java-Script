@@ -1,0 +1,16 @@
+//  using decrementing for loop for reversing string
+
+function main(){
+var a = String(prompt(""))
+console.log(reverseString(a))
+}
+function reverseString(a)
+{
+    var newstring = ""
+for(i=i>=0;a.length-1;i--)
+{
+    newstring += a[i]
+}
+return newstring
+}
+main()
