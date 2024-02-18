@@ -1,0 +1,29 @@
+function main()
+// {
+//     var a= {
+// name:"sai",
+// age: 23,
+// colour:"white"
+// }
+// var c = "a.name"
+
+// console.log(nested(c,a))
+
+// }
+// function nested(c,a)
+// {
+//     const d = c.split(".")
+//     let r = a
+//   for(let x of d)
+//   {
+//      if(r && typeof r==="object" && x in r )
+//      {
+//          r = r[x]
+    
+//      }
+//     else{
+//           return null
+//     }
+//   }
+//   return r
+// }
