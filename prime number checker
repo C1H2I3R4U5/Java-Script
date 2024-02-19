@@ -1,0 +1,34 @@
+//prime number
+
+var a = Number(prompt(""))
+let isprime = true
+
+if(a<=1)
+{
+ console.log("SA")
+}
+else if(a>1)
+{
+
+for(let i=2;i<a;i++)
+{
+    if(a%i==0)
+    {
+       isprime = false
+       break
+    }
+    
+}
+if(isprime)
+{
+    console.log("P")
+}
+else{
+    console.log("N")
+}
+}
+
+
+else{
+    console.log("not")
+}
