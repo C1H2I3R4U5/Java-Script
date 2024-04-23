@@ -1,0 +1,15 @@
+// Finding area of the Triangle
+
+function main() {
+    var side1 = parseInt(readLine());
+    var side2 = parseInt(readLine());
+    var side3 = parseInt(readLine());
+    console.log(getTriangleArea(side1, side2, side3));
+}
+function getTriangleArea(side1, side2, side3) {
+  // Your code goes here
+  var s = (side1+side2+side3)/2
+  var areaT = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3)) 
+  return areaT  
+}
+
