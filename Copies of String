@@ -1,0 +1,12 @@
+//Copies of String
+
+function main() {
+    var str = readLine();
+    var n = parseInt(readLine());
+    console.log(string_copies(str,n));
+}
+function string_copies(str,n) 
+{
+  // Your code goes here
+  return str.repeat(n)
+}
