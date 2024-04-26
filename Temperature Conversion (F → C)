@@ -1,0 +1,11 @@
+//Temperature Conversion (F → C)
+
+function main() {
+    var a = parseInt(readLine());
+    console.log(fahrenheitToCelsius(a));
+}
+function fahrenheitToCelsius(fahrenheit) {
+  // Your code goes here
+  var d= 5/9*(fahrenheit-32)
+  return d
+}
