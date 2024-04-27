@@ -1,0 +1,16 @@
+//String Shifting Shenanigans
+
+function main() {
+    var s = readLine();
+    console.log((lShift(s) === rShift(s)) ? 'YES' : 'NO');
+}
+function lShift(s) {
+    // Your code goes here
+    var d = s.slice(1)+s[0]
+    return d
+}
+function rShift(s) {
+    // Your code goes here
+    var c  = s.slice(-1)+s.slice(0,-1)
+    return c
+}
