@@ -1,0 +1,8 @@
+//converting into lowercase
+
+var a = "HELLO"
+function lowercase(a){
+    return a.toLowerCase()
+}
+var c= lowercase(a)
+console.log(c)
