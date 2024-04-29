@@ -1,0 +1,10 @@
+//To Lower Case
+
+function main() {
+    var s = readLine();
+    console.log(toLowerCase(s));
+}
+var toLowerCase = function(s) {
+    // Your code goes here
+    return s.toLowerCase()
+};
