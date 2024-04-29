@@ -1,0 +1,16 @@
+//Length of Last Word
+
+function main() {
+    var s = readLine();
+    console.log(lengthOfLastWord(s));
+}
+var lengthOfLastWord = function(s) {
+    // Your code goes here
+    let length = 0, max = 0;
+    for (let i = 0; i < s.length; i++)
+        if (s[i] !== ' ')
+            length++, max = length;
+        else
+            length = 0;
+    return max;
+};
