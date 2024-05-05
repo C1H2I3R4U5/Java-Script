@@ -1,0 +1,18 @@
+//printing the number using regular expression 
+function main(){
+ const str = "Cost of the moblie is 20000"
+ const d = str.split(" ")
+ console.log(regx(d))
+ }
+ function regx(d){
+     let f = []
+ for(let i of d){
+    
+     if(i.match(/\d/))
+     {
+         f.push(Number(i))
+     }
+ }
+ return f
+ }
+main()
