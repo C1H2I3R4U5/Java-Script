@@ -1,0 +1,21 @@
+// A function that returns a Promise
+function myPromiseFunction() {
+    return new Promise((resolve, reject) => {
+        // Simulating an asynchronous operation (e.g., fetching data)
+        setTimeout(() => {
+            // Simulating successful completion
+            resolve("Promise resolved successfully!");
+            // Simulating failure
+            // reject(new Error("Promise rejected!"));
+        }, 2000); // Simulating a delay of 2 seconds
+    });
+}
+
+// Consuming the Promise
+myPromiseFunction()
+    .then(result => {
+        console.log(result); // Output: Promise resolved successfully!
+    })
+    .catch(error => {
+        console.error(error.message); // Output: Promise rejected!
+    });
