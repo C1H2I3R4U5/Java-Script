@@ -1,0 +1,22 @@
+
+function main() {
+    var arr = readLine().split(" ").map(x => parseInt(x));
+    var n = parseInt(readLine());
+    console.log(findNumberOfTriangles(arr, n));
+}
+function findNumberOfTriangles(arr, n)
+{
+
+  let count=0
+  for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        for(k=j+1;k<arr.length;k++){
+            if(arr[i]+arr[j]>arr[k] && arr[j]+arr[k]>arr[i] && arr[i]+arr[k]>arr[j]){
+                 count++
+            }
+        }
+    }
+  }
+return count
+    
+}
