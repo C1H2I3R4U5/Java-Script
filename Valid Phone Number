@@ -1,0 +1,10 @@
+function main() {
+    var phoneNumber = parseInt(readLine());
+    console.log(isValidPhoneNumber(phoneNumber));
+}
+function isValidPhoneNumber(phoneNumber) {
+  // Your code goes here
+
+let regex = /^[789]\d{9}/
+return regex.test(phoneNumber)
+}
