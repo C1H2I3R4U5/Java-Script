@@ -1,0 +1,23 @@
+
+
+function main(){
+let str  = String(prompt())
+console.log(Insert7(str))
+}
+function Insert7(str){
+let count = 0
+let result = ''
+for(let i=0;i<str.length;i++){
+   
+    if(str[i]!== ''){
+        count++
+    }
+    result+=str[i]
+    if(count === 6){
+        result+='7'
+    }
+  
+}
+return result
+}
+main()
