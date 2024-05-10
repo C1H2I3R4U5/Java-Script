@@ -1,0 +1,22 @@
+//Array insertion
+
+
+function main(){
+    let arr1 = prompt().split(",").map(x=>Number(x))
+    let arr2 = prompt().split(",").map(x=>Number(x))
+    console.log(arrayIntersection(arr1,arr2))
+}
+function arrayIntersection(arr1,arr2){
+  let emptyArr = []
+
+  const set = new Set(arr2);
+    for(let i of arr1){
+        if(set.has(i))
+            { 
+                emptyArr.push(i)
+                set.delete(i)
+            }
+    }
+    return emptyArr.sort()
+}
+main()
