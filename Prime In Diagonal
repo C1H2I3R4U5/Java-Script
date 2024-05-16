@@ -1,0 +1,27 @@
+
+function main() {
+    const numsRows = parseInt(readLine().trim(), 10);
+	const numsColumns = parseInt(readLine().trim(), 10);
+	let nums = Array(numsRows);
+	for (let i = 0; i < numsRows; i++) {
+		nums[i] = readLine().replace(/\s+$/g, '').split(' ').map(numsTemp => parseInt(numsTemp, 10));
+	}
+    console.log(diagonalPrime(nums));
+}
+var diagonalPrime = function(nums) {
+     let m = 0
+    let prime = (num) =>{
+        if(num < 2){return false}
+        if(num == 2){return true}
+        if(num%2 == 0){return false}
+        for(let i = 3 ; i < Math.sqrt(num) +1; i += 2){if(num%i == 0){return false}}
+        return true
+    }
+    for(let i = 0 ; i < nums.length ; i++){
+        if(prime(nums[i][i])){ m = (m>nums[i][i])?m:nums[i][i]}
+        if(prime(nums[i][nums.length - i - 1])){
+            m = (m>nums[i][nums.length - i - 1])?m:nums[i][nums.length - i - 1]
+        }
+    }
+    return m
+};
