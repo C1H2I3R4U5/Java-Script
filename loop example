@@ -1,0 +1,11 @@
+// Write a loop that finds the largest number in an array, ensuring it is optimized for performance.
+const numbers = [3, 6, 2, 56, 32, 5, 89, 32];
+let largestNum =''
+for(let i=0;i<numbers.length;i++){
+   for(let j=i+1;j<numbers.length;j++){
+    if(numbers[i]>largestNum){
+        largestNum=numbers[i]
+    }
+   }
+}
+console.log(largestNum)
